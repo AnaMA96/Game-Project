@@ -5,10 +5,11 @@
 In this project I've created a game to encrypt or decrypt the text you provide the program with.
 ### How does it work?
 We have three different levels in this game:
-1. Reverse encryption:\
+1.  #### Reverse encryption:
 This mode reverses the order of a string, so the parameter should be a string.\
 **For example**, if you are encrypting the text 'Such an awesome project', the encrypted text would be 'tcejorp emosewa na hcuS!
-2. Caesar encryption:\
+
+2. #### Caesar encryption:
 This mode like the Caesar Cipher takes a string, and converts each letter in the string to a different one by associating it with a number, and uses the key to get a new numeric value that is then translated back into a new encrypted string.\
    **For example**, if you are encrypting the text 'abc', and your key is 1, the encrypted string would be 'bcd' because
     a = 0, b = 1, c = 2, d = 3 ... and the key of 1 adds 1 to the number corresponding number of each letter in the
@@ -19,12 +20,13 @@ This mode like the Caesar Cipher takes a string, and converts each letter in the
     3) "key" is the numeric key that will be used to decrypt your message.  If you are encrypting, the key is
             random.
 
-3. Vigenere encryption:\
+3. #### Vigenere encryption:
 This mode takes a text and encrypts or decrypts it according to the key word provided. The
     function used to encrypt/decrypt
     uses a key-word changed into a series of numbers that is then applied to the text.\
+    
 
-    **For example**, if you are encrypting the text 'abc', and your key is 'bad', the encrypted string would be 'bbf'
+**For example**, if you are encrypting the text 'abc', and your key is 'bad', the encrypted string would be 'bbf'
     because a = 0, b = 1, c = 2, d = 3 ... and the key of 'bad' adds the series of numbers (1, 0, 3) to  to the text
     translated into numbers (0, 1, 2), which adds up to (1, 1, 5) or 'bbf'.\
     The function takes 3 parameters:
