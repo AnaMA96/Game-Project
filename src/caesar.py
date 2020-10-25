@@ -3,7 +3,7 @@ from helper import *
    
 def cae_encrypt(mode, text, key=None):
     """
-    This function, like the Caesar Cypher takes a string, and converts each letter to a different one 
+    This function, like the Caesar Cipher takes a string, and converts each letter to a different one 
     by associating it with a number. Then, uses the key to get a new numeric value that is then translated back 
     into a new encrypted string.
     It takes 3 parameters:
@@ -23,7 +23,7 @@ def cae_encrypt(mode, text, key=None):
 
 def cae_decrypt(mode, text, key=None):
     """
-    This function decrypts a text encrypted with the Caesar Cypher subtracting the key value.
+    This function decrypts a text encrypted with the Caesar Cipher subtracting the key value.
     It takes 3 parameters:
         1) "mode" tells the function to encrypt (add the key value).
         2) "text": the text to be encrypted or decrypted.

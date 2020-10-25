@@ -20,6 +20,8 @@ This mode like the Caesar Cipher takes a string, and converts each letter in the
     3) "key" is the numeric key that will be used to decrypt your message.  If you are encrypting, the key is
             random.
 
+[Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
+
 3. #### Vigenere encryption:
 This mode takes a text and encrypts or decrypts it according to the key word provided. The
     function used to encrypt/decrypt
@@ -35,6 +37,8 @@ This mode takes a text and encrypts or decrypts it according to the key word pro
     3) "key" is the string that will be used to decrypt your message.  If you are encrypting, the key is random.
     
 The dictionaries that convert between letters and numbers are stored in the helper.py file.
+
+[Vigènere Cipher](https://en.wikipedia.org/wiki/Vigenère_cipher)
 
 ### What can I do?
 You can practise your encryption skills with the three methods trying to guess how will it work, and then, when you have practiced enough, you can try to test yourself with the test mode, so you will receive an encrypted text and you will have the chance to decrypt it.
