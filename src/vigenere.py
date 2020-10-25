@@ -19,8 +19,8 @@ def vigenere_encryption(mode, text, key=None):
     elif mode == 'decrypt':
         key = key
     k = itertools.cycle(key)  
-    # creates an infinite iteration over the key creating a list as long as the text from the variable k
-    # Como no sabemos la longitud del string que nos van a pasar utilizamos itertools.cycle como un "puntero infinito"
+    # itertools.cycle creates an iterator object so that we can iterate trough the key to obtain a list
+    #of characters with the same length as the text provided to the function.
     i = 1
     while i <= len(text):
         keys.append(next(k))

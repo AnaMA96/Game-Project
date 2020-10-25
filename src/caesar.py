@@ -1,7 +1,7 @@
 import random
 from helper import *
    
-def cae_encrypt(mode, text, key=None):
+def cae_encrypt(mode, text):
     """
     This function, like the Caesar Cipher takes a string, and converts each letter to a different one 
     by associating it with a number. Then, uses the key to get a new numeric value that is then translated back 
@@ -9,7 +9,6 @@ def cae_encrypt(mode, text, key=None):
     It takes 3 parameters:
         1) "mode" tells the function to encrypt (add the key value).
         2) "text": the text to be encrypted or decrypted.
-        3) "key": the numeric key that will be used to decrypt the message.The key is random when encrypting.
     """
     num_list = [abc_to_num[s] if s in abc else s for s in text]
     if mode == 'encrypt':
