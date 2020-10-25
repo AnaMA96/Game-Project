@@ -29,13 +29,11 @@ def cae_decrypt(mode, text, key=None):
         2) "text": the text to be encrypted or decrypted.
         3) "key": the numeric key that will be used to decrypt the message.The key is random when encrypting.
     """
-    mode = mode
     num_list = [abc_to_num[s] if s in abc else s for s in text]
     if mode == 'decrypt':
         key = key
         print("Your key for decryption is :", key)
         str_key = str(key)
-        text = text.lower()
         new_lst = [num_to_abc[(n - key) % 54] if n in num else n for n in num_list]
         new_str = ''
     for i in new_lst:
@@ -65,10 +63,10 @@ def caesar_main():
             encrypted_text = cae_encrypt('encrypt', text)
             print(encrypted_text[0])
             answer = input('Can you decode this string? ')
-            if answer.lower() == text.lower():
+            if answer == text:
                 print('Yay! You solved level 2!\n')
                 break
-            elif answer.lower() != text.lower():
+            else:
                 print("Sorry, you failed. Don't worry, you just need a little more of practice.\n")
         elif pt.lower() == 'q':
             exit()

@@ -11,7 +11,6 @@ def vigenere_encryption(mode, text, key=None):
         3) "key": the string that will be used to decrypt the message.  When encrypting, the key is random.
     """
     mode = mode
-    text = text.lower()
     keys = []
     new_lst = []
     if mode == 'encrypt':
@@ -71,14 +70,14 @@ def vigenere_main():
             encrypted_text = vigenere_encryption('encrypt', text)
             print(encrypted_text)
             answer = input('Can you decode this string? ')
-            if answer.lower() == text.lower():
+            if answer == text:
                 print('Yay! You solved level 3!\n')
                 break
-            elif answer.lower() != text.lower():
+            else:
                 print("Sorry, you failed. Don't worry, you just need a little more of practice.\n")
-            elif pt.lower() == 'q':
-                exit()
-            elif pt.lower() == 'm':
-                break
+        elif pt.lower() == 'q':
+            exit()
+        elif pt.lower() == 'm':
+            break
         else:
             print('Please enter a valid choice.')
