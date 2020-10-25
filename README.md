@@ -22,7 +22,7 @@ This mode like the Caesar Cipher takes a string, and converts each letter in the
 
 [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
 
-3. #### Vigenere encryption:
+3. #### Vigenère encryption:
 This mode takes a text and encrypts or decrypts it according to the key word provided. The
     function used to encrypt/decrypt
     uses a key-word changed into a series of numbers that is then applied to the text.\
@@ -38,7 +38,7 @@ This mode takes a text and encrypts or decrypts it according to the key word pro
     
 The dictionaries that convert between letters and numbers are stored in the helper.py file.
 
-[Vigènere Cipher](https://en.wikipedia.org/wiki/Vigenère_cipher)
+[Vigenère Cipher](https://en.wikipedia.org/wiki/Vigenère_cipher)
 
 ### What can I do?
 You can practise your encryption skills with the three methods trying to guess how will it work, and then, when you have practiced enough, you can try to test yourself with the test mode, so you will receive an encrypted text and you will have the chance to decrypt it.
