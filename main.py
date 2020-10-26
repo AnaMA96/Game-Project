@@ -1,6 +1,6 @@
-from caesar import *
-from vigenere import *
-from reverse import *
+from src.caesar import * 
+from src.vigenere import *
+from src.reverse import *
 
 def main():
     print("Hello and welcome to my encryption game\n"

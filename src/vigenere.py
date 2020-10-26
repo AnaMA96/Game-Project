@@ -1,6 +1,6 @@
 import random
 import itertools
-from helper import *
+from src.helper import *
 
 def vigenere_encryption(mode, text, key=None):
     """
